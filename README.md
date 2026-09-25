@@ -12,3 +12,7 @@ ctest --test-dir build --output-on-failure
 Для санитайзеров при настройке указать `-DCMAKE_BUILD_TYPE=Debug -DENABLE_SANITIZERS=ON`.
 
 Отличия от `std`: счётчики — `int`, нет потокобезопасности, `weak_ptr` и `make_shared`.
+
+` leaks --atExit -- ./build/smart_ptr_demo `
+
+![Результат замера скорости](assets/speed-results.png)
